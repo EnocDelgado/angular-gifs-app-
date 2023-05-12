@@ -1,6 +1,10 @@
-
-
 <div class="row">
+
+  <gifs-gifs-card
+    *ngFor="let gif of gifs"
+    [gif]="gif"
+    class="col-md-3 col-sm-6"
+  ></gifs-gifs-card>
 
   <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6">
     <div class="card text-center bg-dark">
